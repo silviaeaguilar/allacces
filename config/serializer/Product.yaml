@@ -1,0 +1,14 @@
+App\Entity\Product:
+  attributes:
+    id:
+      groups: ['product']
+    name:
+      groups: ['product']
+    price:
+      groups: [ 'product' ]
+    currency:
+        groups: [ 'product' ]
+    category:
+        groups: [ 'product' ]
+    featured:
+      groups: [ 'product' ]

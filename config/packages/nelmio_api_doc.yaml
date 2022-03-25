@@ -1,0 +1,29 @@
+#nelmio_api_doc:
+#    documentation:
+#        info:
+#            title: All Access
+#            description: Silvia Aguilar
+#            version: 1.0.0
+#    areas: # to filter documented areas
+#        path_patterns:
+#            - ^/api(?!/doc$) # Accepts routes under /api except /api/doc
+
+nelmio_api_doc:
+    documentation:
+        #servers:
+        #    - url: http://api.example.com/unsafe
+        #      description: API over HTTP
+        #    - url: https://api.example.com/secured
+        #      description: API over HTTPS
+        info:
+            title: All Access
+            description: Silvia Aguilar
+            version: 1.0.0
+        components:
+            securitySchemes:
+                Bearer:
+                    type: http
+                    scheme: bearer
+                    bearerFormat: JWT
+        security:
+            - Bearer: []
